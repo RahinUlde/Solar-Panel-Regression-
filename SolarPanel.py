@@ -48,5 +48,5 @@ if st.sidebar.button("⚡ Predict Power Generation"):
     prediction = model.predict(features)
     st.success(f"🔋 Estimated Power Generated: **{prediction[0]:.2f} kW**")
     # Show PNG image at the top
-    st.image("solar.png", caption="Solar Energy Prediction", use_container_width=True)
+    st.image("solar.png", caption="Solar Energy Prediction", width=400)
     st.snow()  # 🎈 nice animation effect
